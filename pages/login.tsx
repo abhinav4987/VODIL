@@ -33,8 +33,6 @@ function Login() {
 
 
   const onSubmit = async () => {
-      if(true) {
-        if(validationError !== '')  setValidationError('');
         try {
             setLoading(true)
             let didToken = await magic.auth.loginWithMagicLink({email});
@@ -54,9 +52,6 @@ function Login() {
             if(error)
             console.log(error);
         }
-      } else {
-          setValidationError('Enter valid email');
-      }
 
   }
 
