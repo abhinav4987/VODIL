@@ -33,7 +33,7 @@ function Login() {
 
 
   const onSubmit = async () => {
-      if(RegExp(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/).test(email)) {
+      if(true) {
         if(validationError !== '')  setValidationError('');
         try {
             setLoading(true)
@@ -77,7 +77,7 @@ function Login() {
                 </div>
                 <div className={styles.form}>
                     <h2 className={styles.signin}>Sign In</h2>
-                    <Input value={email} onChange={setEmail} error={validationError} placeholder={"Enter your Email"}/>
+                    <Input type="email" value={email} onChange={setEmail} error={validationError} placeholder={"Enter your Email"}/>
                     <button className={styles.login_button} onClick={onSubmit}>
                         {loading ? "Loading..." : "Login"}
                     </button>
