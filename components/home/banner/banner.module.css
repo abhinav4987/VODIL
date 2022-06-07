@@ -1,0 +1,350 @@
+
+.container {
+  
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  z-index: -1;
+}
+
+.leftWrapper {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  z-index: 10;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 9rem /* 64px */;
+  padding-right: 4rem /* 64px */;
+  /* height: 100%; */
+
+  flex-direction: column;
+  margin-top: 25rem /* 96px */;
+}
+
+
+
+.nseriesWrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.firstLetter {
+  font-size: 5.75rem /* 60px */;
+  line-height: 1;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.series {
+  font-size: 1.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  color: var(--gray20);
+  align-self: center;
+}
+
+.title {
+  font-size: 2.75rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  font-weight: 800;
+  color: var(--white10) !important;
+  margin-bottom: 0.75rem;
+}
+
+.subTitle {
+  font-size: 1.725rem /* 18px */;
+  line-height: 1.8rem /* 28px */;
+  color: var(--white10) !important;
+  margin-bottom: 0.05rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
+.playBtnWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.playText {
+  color: rgb(31, 41, 55);
+  font-weight: 600;
+  font-size: 1.725rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  padding-left: 0.25rem /* 4px */;
+  text-align: center;
+}
+
+.btnWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+  margin-top: 1.25rem /* 20px */;
+
+  border-radius: 0.5rem /* 8px */;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+
+  background-color: var(--white10);
+  /* width: 8rem 128px; */
+}
+
+
+
+/** Breakpoints:
+  sm: min-width: 640px;
+  md: min-width: 768px;
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
+@media (max-width: 1280px) {
+  .left {
+    width: 60%;
+  }
+
+  .container {
+    height: 100vh;
+  }
+  .left {
+    padding-left: 2.5rem /* 64px */;
+    padding-right: 1rem /* 64px */;
+    flex-direction: column;
+    margin-top: calc(50vh - 3rem) /* 96px */;
+  }
+
+
+
+  .nseriesWrapper {
+    display: flex;
+    margin-bottom:0.4rem;
+  }
+
+  .firstLetter {
+    font-size: 4.75rem /* 60px */;
+  }
+
+  .series {
+    font-size: 1.775rem /* 14px */;
+  }
+
+  .title {
+    font-size: 2.75rem /* 24px */;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+  }
+
+  .subTitle {
+    display: none;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .playText {
+    font-size: 1.225rem /* 18px */;
+    padding-left: 0.25rem /* 4px */;
+  }
+
+  .btnWithIcon {
+    padding-left: 1.05rem /* 20px */;
+    padding-right: 1.05rem /* 20px */;
+    margin-top: 1.05rem /* 20px */;
+
+    border-radius: 0.4rem /* 8px */;
+    padding-top: 0.1rem /* 8px */;
+    padding-bottom: 0.1rem /* 8px */;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .left {
+    width: 60%;
+  }
+
+  .leftWrapper {
+    width: 80%;
+  }
+
+  .container {
+    height: 80vh;
+  }
+  .left {
+    padding-left: 2.5rem /* 64px */;
+    padding-right: 1rem /* 64px */;
+    flex-direction: column;
+    margin-top: calc(50vh - 3rem) /* 96px */;
+  }
+
+
+
+  .nseriesWrapper {
+    display: flex;
+    margin-bottom:0.4rem;
+  }
+
+  .firstLetter {
+    font-size: 4.75rem /* 60px */;
+  }
+
+  .series {
+    font-size: 1.775rem /* 14px */;
+  }
+
+  .title {
+    font-size: 2.75rem /* 24px */;
+    margin-bottom: 1.25rem;
+  }
+
+  .subTitle {
+    display: none;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .playText {
+    font-size: 1.225rem /* 18px */;
+    padding-left: 0.25rem /* 4px */;
+  }
+
+  .btnWithIcon {
+    padding-left: 1.05rem /* 20px */;
+    padding-right: 1.05rem /* 20px */;
+    margin-top: 1.05rem /* 20px */;
+
+    border-radius: 0.4rem /* 8px */;
+    padding-top: 0.1rem /* 8px */;
+    padding-bottom: 0.1rem /* 8px */;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .left {
+    width: 60%;
+  }
+
+  .container {
+    height: 40vh;
+  }
+  .left {
+    padding-left: 1rem /* 64px */;
+    padding-right: 1rem /* 64px */;
+    flex-direction: column;
+    margin-top: calc(30vh - 3rem) /* 96px */;
+  }
+
+
+
+  .nseriesWrapper {
+    display: flex;
+    margin-bottom:0.4rem;
+  }
+
+  .firstLetter {
+    font-size: 2.75rem /* 60px */;
+  }
+
+  .series {
+    font-size: 1.075rem /* 14px */;
+  }
+
+  .title {
+    font-size: 1.75rem /* 24px */;
+    margin-bottom: 0.75rem;
+  }
+
+  .subTitle {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+  }
+
+  .playText {
+    font-size: 1.225rem /* 18px */;
+    padding-left: 0.25rem /* 4px */;
+  }
+
+  .btnWithIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+    .container {
+      height: 30vh;
+      
+    }
+    .left {
+      padding-left: 1rem /* 64px */;
+      padding-right: 1rem /* 64px */;
+      flex-direction: column;
+      margin-top: 20vh /* 96px */;
+       width: 60%;
+    }
+    
+    .nseriesWrapper {
+      display: flex;
+      margin-bottom:0.4rem;
+    }
+
+    .firstLetter {
+      font-size: 2.75rem /* 60px */;
+    }
+
+    .series {
+      font-size: 1.075rem /* 14px */;
+    }
+
+    .title {
+      font-size: 1.75rem /* 24px */;
+      margin-bottom: 0.75rem;
+    }
+
+    .subTitle {
+      display: none;
+    }
+
+    .playText {
+      font-size: 1.225rem /* 18px */;
+      padding-left: 0.25rem /* 4px */;
+    }
+
+    .btnWithIcon {
+      display: none;
+    }
+
+}
