@@ -11,7 +11,7 @@ export default async function handler(
         try {
             
             const token = req.cookies.token;
-            // console.log("cookie => ", token);
+           
             if (!token) {
             res.status(403).send({});
             } else {

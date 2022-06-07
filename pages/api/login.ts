@@ -30,7 +30,7 @@ export default async function login(req, res) {
 
             res.send({done: true, isNewUser: isNewUserCheck});
         } catch (error) {
-            console.log(error);
+            
             res.status(500).send({done: "false1"});
         }
     } else {

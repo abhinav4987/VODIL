@@ -220,7 +220,7 @@ export const get_dataByTvId = async (id:string) => {
             baseURL, data: data
         };
     } catch(error) {
-        console.log(error);
+        
         return null;
     }
 };
@@ -239,7 +239,7 @@ export const  get_dataByMovieId = async (id:string) =>{
             baseURL, data: data
         };
     } catch (error) {
-        console.log(error);
+      
         return null
     }
 }
@@ -250,7 +250,7 @@ export const getMyList = async (userId, token) => {
       video_id: string,
       video_type: string,
   }> = await get_myListVideos(userId, token);
-  console.log("hefeed => ", videos)
+
   const data:Array<{
       content_type: "movie" | "tv",
       data: []
@@ -261,7 +261,7 @@ export const getMyList = async (userId, token) => {
         let vidData;
         if(video.video_type === "movie") {
             vidData = await get_dataByMovieId(video.video_id);
-            console.log("vide0 movie=> ", video.video_id);
+         
             if(vidData)
             data.push({
                 content_type: "movie",
@@ -269,7 +269,7 @@ export const getMyList = async (userId, token) => {
             })
         } else {
             vidData = await get_dataByTvId(video.video_id);
-            console.log("vide0 tv => ", video.video_id);
+            
             if(vidData)
             data.push({
                 content_type: "tv",

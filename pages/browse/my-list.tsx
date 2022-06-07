@@ -47,7 +47,7 @@ export async function  getServerSideProps(context) {
     
     const videos = await getMyList(userId, token);
 
-    // console.log("my list => ",getMyList);
+    
 
     return {
         props: {
