@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import styles from "./loading.module.css";
+import styles from "./Loading.module.css";
 const Loading = () => {
   return (
     <div className={styles.loader}>
