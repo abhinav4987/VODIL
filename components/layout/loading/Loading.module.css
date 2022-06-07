@@ -8,8 +8,7 @@
 }
 
 .image {
-  height: 500px;
-  width: 500px;
+  width: 30%;
   animation: zoom-in-zoom-out 2s ease-in infinite;
 }
 

@@ -8,8 +8,7 @@ const Loading = () => {
           className={styles.image}
           src="/svg/netflix.svg"
           alt="Netflix logo"
-          width="168px"
-          height="54px"
+          
         />
     </div>
   );
