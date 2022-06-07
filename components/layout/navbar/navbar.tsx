@@ -74,7 +74,7 @@ function Navbar() {
             <nav className={styles.navContainer}>
                 <div>
                     <button className={styles.usernameBtn}  onClick={toggleSignOut}>
-                        <p className={styles.username}>{email && email[0].toLocaleUpperCase()}</p>
+                        {email && <p className={styles.username}>{email && email[0].toLocaleUpperCase()}</p>}
                     </button>
                     {showDropdown && (
                         <div className={styles.navDropdown} onClick={toggleSignOut}>
