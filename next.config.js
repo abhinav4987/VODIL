@@ -4,6 +4,14 @@ const nextConfig = {
   images: {
     domains: ['themoviedb.org', 'image.tmdb.org','api.themoviedb.org'],
   },
+    typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
+
 }
 
 module.exports = nextConfig
